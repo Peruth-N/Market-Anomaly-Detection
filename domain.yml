@@ -1,0 +1,13 @@
+# domain.yml
+intents:
+  - greet
+  - ask_strategy
+  - goodbye
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you with your investment strategy today?"
+  utter_ask_strategy:
+    - text: "Based on the current market conditions, I recommend the following strategy: ..."
+  utter_goodbye:
+    - text: "Goodbye! Have a great day!"

@@ -1,0 +1,27 @@
+version: "2.0"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hello
+      - hi
+      - hey
+      - good morning
+      - good evening
+      - hey there
+
+  - intent: ask_strategy
+    examples: |
+      - what is your investment strategy?
+      - tell me the investment strategy
+      - what should I do with my investments?
+      - give me an investment strategy
+
+  - intent: goodbye
+    examples: |
+      - bye
+      - goodbye
+      - see you later
+      - have a nice day
+      - see you around
+      - bye bye

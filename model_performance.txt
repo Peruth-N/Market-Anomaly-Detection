@@ -1,0 +1,11 @@
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      1158
+           1       0.98      0.96      0.97        48
+
+    accuracy                           1.00      1206
+   macro avg       0.99      0.98      0.98      1206
+weighted avg       1.00      1.00      1.00      1206
+
+Final portfolio value: $175366.94

@@ -1,0 +1,8 @@
+rasa
+rasa-sdk
+scikit-learn
+pandas
+matplotlib
+seaborn
+yfinance
+joblib
