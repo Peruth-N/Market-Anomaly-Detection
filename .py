@@ -9,6 +9,8 @@ from sklearn.metrics import classification_report, confusion_matrix
 import joblib
 
 try:
+    # MODULARIZE code functions for organizational purposes.
+    
     # Fetch S&P 500 data
     ticker = "^GSPC"  # S&P 500 Index
     data = yf.download(ticker, start="2000-01-01", end="2023-12-31", interval="1d")
@@ -57,7 +59,6 @@ try:
     plt.savefig("correlation_matrix.png")
     plt.show()
 
-    print("Preprocessing completed. Dataset saved as 'S&P500_Preprocessed.csv'.")
     print("Training the logistic regression model...")
 
     # Define features and target
