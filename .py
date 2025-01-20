@@ -7,6 +7,8 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, confusion_matrix
 import joblib
+from sklearn.svm import SVC
+from xgboost import XGBClassifier
 
 try:
     # Fetch S&P 500 data
@@ -85,6 +87,12 @@ try:
     # Train a logistic regression model
     model = LogisticRegression(random_state=42, max_iter=500)
     model.fit(X_train_scaled, y_train)
+
+    model_xgboost = XGBClassifier(random_state=42)
+    model_xgboost.fit(X_train_scaled, y_train)
+
+    model_SVC = SVC(kernel='linear', random_state=42, max_iter=500)
+    model_SVC.fit(X_train_scaled, y_train)
 
     print("Model training completed.")
     print("Evaluating the model...")
